@@ -1,0 +1,22 @@
+{
+    "name": "app/software-eng",
+    "autoload": {
+        "psr-4": {
+            "Lab\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fernando Rodrigues",
+            "email": "nandorodpires@gmail.com"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": false
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}
