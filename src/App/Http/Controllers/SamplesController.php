@@ -2,14 +2,16 @@
 
 namespace Lab\App\Controllers;
 
-use Lab\App\Services\Sample\CreateSampleService;
+use Lab\App\DTO\SampleDTO;
+use Lab\App\Services\Sample\SampleService;
 
 class SamplesController
 {
-    protected CreateSampleService $createSampleService;
+    protected SampleService $createSampleService;
 
     public function store(array $data)
     {
-        return $this->createSampleService->execute($data);
+        $sampleDTO = new SampleDTO($data);
+        return $this->createSampleService->create($sampleDTO);
     }
 }

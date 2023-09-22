@@ -2,9 +2,10 @@
 
 namespace Lab\App\Services\Sample;
 
-use Lab\App\Repositories\SampleRepository;
+use Lab\App\DTO\SampleDTO;
+use Lab\Domain\Repositories\SampleRepository;
 
-class CreateSampleService
+class SampleService
 {
     protected SampleRepository $sampleRepository;
 
@@ -13,7 +14,7 @@ class CreateSampleService
         $this->sampleRepository = $sampleRepository;
     }
 
-    public function execute(array $data)
+    public function create(SampleDTO $data)
     {
         return $this->sampleRepository->create($data);
     }
