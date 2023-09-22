@@ -2,7 +2,12 @@
 
 namespace Lab\Domain\Entities;
 
-class Customer {
+class Customer
+{
     protected int $code;
-    protected string $name;
+
+    public function __construct(int $code)
+    {
+        $this->code = $code;
+    }
 }

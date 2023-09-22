@@ -1,7 +1,7 @@
 <?php
 
 use Lab\App\DTO\SampleDTO;
-use Lab\Domain\Repositories\SampleRepository;
+use Lab\Infra\Repositories\SampleRepository;
 use Lab\App\Services\Sample\SampleService;
 use PHPUnit\Framework\TestCase;
 
