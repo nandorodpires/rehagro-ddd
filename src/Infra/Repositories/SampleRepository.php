@@ -7,7 +7,7 @@ use Lab\Domain\Repositories\SampleRepositoryInterface;
 
 class SampleRepository implements SampleRepositoryInterface
 {
-    public function create(Sample $aluno)
+    public function create(Sample $sample)
     {        
         // aqui seria a persistencia em uma base de dados
         return true;   

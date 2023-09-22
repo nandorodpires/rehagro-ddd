@@ -23,7 +23,7 @@ class Sample
 
     public function addPackage(int $code)
     {
-        $this->packages = new Package($code);
+        $this->packages[] = new Package($code);
         return $this;
     }
 
